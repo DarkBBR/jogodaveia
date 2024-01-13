@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +10,34 @@ body {
     background: linear-gradient(90deg,
             rgb(54, 57, 55) 0%,
             rgb(245, 4, 4) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Impede a barra de rolagem vertical */
+
+}
+
+/* Estilos para os rótulos dos campos de entrada de nomes */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Estilizar os campos de entrada de nomes */
+input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
 }
 
 .board {
